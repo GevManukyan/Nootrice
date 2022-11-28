@@ -32,6 +32,19 @@ label .menu {
   .menuUl{
     font-size: 30px;
   }
+  .menuUl li{
+    width: 100%;
+    margin: 60px;
+    color: wheat;
+ }
+ .menuUl li a {
+    text-decoration: none;
+    color: wheat;
+ }
+ .menuUl {
+    list-style-type: none;
+    margin-left: -50px;
+ }
   .menuClick{
     background: black;
     
@@ -447,19 +460,7 @@ label ul {
      .btnDiv button{
         margin-bottom: 50px;
      }
-     .menuUl li{
-        width: 100%;
-        margin: 60px;
-        color: wheat;
-     }
-     .menuUl li a {
-        text-decoration: none;
-        color: wheat;
-     }
-     .menuUl {
-        list-style-type: none;
-        margin-left: -50px;
-     }
+    
      #ul1{
         width: 100px;
      }
