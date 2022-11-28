@@ -22,7 +22,6 @@ label .menu {
     z-index: 100;
     width: 100px;
     height: 200px;
-    
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
@@ -30,7 +29,9 @@ label .menu {
     cursor: pointer;
     display: none;
   }
-  
+  .menuUl{
+    font-size: 30px;
+  }
   .menuClick{
     background: black;
     
@@ -447,11 +448,17 @@ label ul {
         margin-bottom: 50px;
      }
      .menuUl li{
-        
-        margin: 100px;
+        width: 100%;
+        margin: 60px;
+        color: wheat;
      }
-     .menuUl li a img{
-        width: 200px;
+     .menuUl li a {
+        text-decoration: none;
+        color: wheat;
+     }
+     .menuUl {
+        list-style-type: none;
+        margin-left: -50px;
      }
      #ul1{
         width: 100px;
