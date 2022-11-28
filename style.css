@@ -31,20 +31,21 @@ label .menu {
   }
   .menuUl{
     font-size: 30px;
+    list-style-type: none;
+    margin-left: -50px;
+    pointer-events: none;
   }
   .menuUl li{
     width: 100%;
     margin: 60px;
     color: wheat;
+    pointer-events:painted;
  }
  .menuUl li a {
     text-decoration: none;
     color: wheat;
  }
- .menuUl {
-    list-style-type: none;
-    margin-left: -50px;
- }
+
   .menuClick{
     background: black;
     
@@ -92,7 +93,7 @@ label .menu {
     transform: rotate(45deg);
     
   }
- 
+  
   label input:checked + .menu .hamburger:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -107,7 +108,7 @@ label .menu {
     
   }
    
-label input:checked + .menu { opacity: 1; }
+/* label input:checked + .menu { opacity: 1; } */
 
 
 label ul {

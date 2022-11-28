@@ -2,11 +2,14 @@
 
 function hamburger(){
     let menu = document.querySelector(".menu") ;
+    let hamb = document.querySelector(".hamburger")
     let x  = true
     let time
     menu.addEventListener("click",function(){
     document.body.classList.toggle("overflow")
     menu.classList.toggle("menuClick")
+    
+    hamb.classList.toggle("touch")
     if(x == true){
         time =  setTimeout(() => {
             document.querySelector(".menuUl").style.display = "block"
