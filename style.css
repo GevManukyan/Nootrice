@@ -19,7 +19,7 @@ label .menu {
     position: absolute;
     right: 0px;
     top: -100px;
-    z-index: 100;
+    z-index: 1000;
     width: 100px;
     height: 200px;
     border-radius: 50% 50% 50% 50%;
@@ -32,14 +32,21 @@ label .menu {
   .menuUl{
     font-size: 30px;
     list-style-type: none;
-    margin-left: -50px;
     pointer-events: none;
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    
+  }
+  .menuUl:hover{
+    display: none;
   }
   .menuUl li{
-    width: 100%;
-    margin: 60px;
+    width: 70%;
+    margin: 50px;
     color: wheat;
     pointer-events:painted;
+    margin: 40px;
  }
  .menuUl li a {
     text-decoration: none;
@@ -82,26 +89,24 @@ label .menu {
    
   label input { display: none; }
   
-  label input:checked + .menu {
-    box-shadow: 0 0 0 100vw rgb(0, 0, 0), 0 0 0 100vh rgb(0, 0, 0);
-    border-radius: 0;
-    
-  }
+  label .hamburgerX:before { top: 0px; }
   
-  label input:checked + .menu .hamburger {
+  label .hamburgerX:after { bottom: 0px; }
+
+   .hamburgerX {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     
   }
   
-  label input:checked + .menu .hamburger:after {
+   .hamburgerX:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
     
   }
   
-  label input:checked + .menu .hamburger:before {
+ .hamburgerX:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
@@ -461,7 +466,11 @@ label ul {
      .btnDiv button{
         margin-bottom: 50px;
      }
-    
+     .menuUlFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
      #ul1{
         width: 100px;
      }

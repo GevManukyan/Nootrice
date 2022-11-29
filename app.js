@@ -1,25 +1,32 @@
 
-
+let x
 function hamburger(){
     let menu = document.querySelector(".menu") ;
     let hamb = document.querySelector(".hamburger")
-    let x  = true
+    x  = true
     let time
     menu.addEventListener("click",function(){
     document.body.classList.toggle("overflow")
-    menu.classList.toggle("menuClick")
+    menu.classList.toggle("menuClick") ;
+    let menuUl = document.querySelector(".menuUl")
     
-    hamb.classList.toggle("touch")
+    hamb.classList.toggle("hamburgerX")
     if(x == true){
         time =  setTimeout(() => {
-            document.querySelector(".menuUl").style.display = "block"
+             
+            document.querySelector(".menuUl").style.display = "flex"
+            document.querySelector(".menuUl").style.flexDirection = "column"
+            document.querySelector(".menuUl").style.justifyContent = "center"
             }, 500); 
              x = false
+            
     }else{
         document.querySelector(".menuUl").style.display = "none"
         x = true
         clearTimeout(time)
     }
+
+
 })
 }
 
